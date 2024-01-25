@@ -1,13 +1,15 @@
-high=0
+import sys
+
 arraynum=0
+high=0
 array=[]
 repeat=0
 answer=1
 
-arraynum=int(input("막대기의 개수를 입력하시오:"))
+arraynum=int(sys.stdin.readline())
 
 while repeat<arraynum:
-    array.append(int(input("막대기의 높이를 입력하시오:")))
+    array.append(int(sys.stdin.readline()))
     repeat+=1
 
 high=array.pop()
